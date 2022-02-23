@@ -21,7 +21,7 @@ ZGT 灵巧手ROS控制
 3: 客户端指令
    a.查看灵巧手状态
    rostopic echo /zgt_hand/hand_state
-   b.发布单个电机运动控制指令（参数：电机编号1~6,运动控制指令0~2000）
+   b.发布单个电机运动控制指令（参数：电机编号1-6,运动控制指令0-2000）
     rosservice call /zgt_hand/set_finger_pose 1 2000
    c.发布灵巧手运动控制指令（参数：一组电机运动控制指令0~2000）
    rosservice call /zgt_hand/set_hand_pose [2000,300,2000,2000,2000,2000] 
